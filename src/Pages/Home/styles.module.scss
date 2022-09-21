@@ -1,0 +1,79 @@
+.container {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // background-color: red;
+
+        ::placeholder {
+            color: var(--text);
+        }
+
+        img {
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 24px;
+            margin-top: 28px;
+            margin-bottom: 25px;
+        }
+
+        .inputForm {
+            background-color: var(--primary);
+            width: 392px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 25px;
+
+            .contentImg{
+                width: 30px;
+                height: 30px;
+                margin: 0 10px;
+                display: flex;
+                
+                img {
+                    height: 100%;
+                    margin: auto;
+                }
+            }
+                
+            input {
+                background-color: var(--primary);
+                outline: none;
+                border: 0;
+                padding: 20px 0;
+                flex: 1;
+                background-color: transparent;
+            }
+
+            a {
+                border: 0;
+                text-align: center;
+                width: 100%;
+                background-color: var(--secondary);
+                padding: 20px;
+                border-radius: 20px;
+                cursor: pointer;
+                color: var(--white);
+                text-decoration: none;
+            }
+
+            @media(max-width: 420px){
+                width: 300px;
+            }
+        }
+
+    }
+}
